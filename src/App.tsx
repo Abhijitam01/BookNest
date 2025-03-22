@@ -1,26 +1,27 @@
 
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { TooltipProvider } from "@/components/ui/toooltip.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LibraryProvider } from "@/context/LibraryContext";
-import { BookListsProvider } from "@/context/BookListsContext";
+import { BookListsProvider } from "@/context/BookListContext.tsx";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { AuthProvider } from "@/context/AuthContext";
 
 // Pages
-import Index from "./pages/Index";
-import Dashboard from "./pages/Dashboard";
-import Search from "./pages/Search";
-import BookDetail from "./pages/BookDetail";
-import NotFound from "./pages/NotFound";
-import BookLists from "./pages/BookLists";
-import BookListDetail from "./pages/BookListDetail";
-import Login from "./pages/Login";
-import Blog from "./pages/Blog";
-import BlogPostDetail from "./pages/BlogPostDetail";
-import GenreDetail from "./pages/GenreDetail";
+import Index from "./pages/index.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
+import Search from "./pages/Search.tsx";
+import BookDetail from "./pages/BookDetail.tsx";
+import NotFound from "./pages/NotFound.tsx";
+import BookLists from "./pages/BookLists.tsx";
+import BookListDetail from "./pages/BookListDetail.tsx";
+import Login from "./pages/Login.tsx";
+import Blog from "./pages/Blog.tsx";
+import BlogPostDetail from "./pages/BlogPostDetail.tsx";
+import GenreDetail from "./pages/GenreDetail.tsx";
 
 const queryClient = new QueryClient();
 
