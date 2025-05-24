@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useBookLists, BookList } from '@/context/BookListsContext';
+import { useBookLists, BookList } from '@/context/BookListContext';
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import {
